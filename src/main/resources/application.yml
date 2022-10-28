@@ -1,0 +1,13 @@
+app:
+  message: message successfully sent
+spring:
+  rabbitmq:
+    host: host.docker.internal
+    password: guest
+    port: 15672
+    username: guest
+    exchange: user.exchange
+    queue: user.queue
+    routingKey: user.routingkey
+server:
+  port: 8081

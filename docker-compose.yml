@@ -1,0 +1,12 @@
+#
+version: '3'
+
+services:
+  app:
+    container_name: app
+    image: microservices-messaging-producer:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8081:8081
